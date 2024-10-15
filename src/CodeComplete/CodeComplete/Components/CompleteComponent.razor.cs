@@ -4,12 +4,16 @@
 // -----------------------------------
 
 using System.Collections.Generic;
+using CodeComplete.Services;
 using Microsoft.AspNetCore.Components;
 
 namespace CodeComplete.Components
 {
     public partial class CompleteComponent : ComponentBase
     {
+        [Inject]
+        protected ICompleteService CompleteService { get; set; }
+
         private string promptText;
         private List<string> logs = [];
     }
