@@ -1,0 +1,8 @@
+{
+  "ProjectType": 0 ,//"Type is C# integer enum ProjectType:int=> Api (return: 0), BlazorWasm (return: 1) (Default), BlazorServer (return: 2), Maui (return: 3), Microservice (return: 4), Component (return: 5), CodeFile (return: 6), Unknown (return: 100)",
+  "ProjectName": "If no name in the requirements, please set a project name in this format: DevConf.Demo.MEANINGFUL_WORD_FROM_PROMPMT",
+  "FileName": "If no name in the requirements, please set a file name.",
+  "Models": [ "Models type is List<string> and write possible models here if not component or codefile" ],
+  "AddStorageBroker": "Type is bool. Default is ture if ModelsIfNeeded not empty",
+  "AddFoundationService": "Type is bool. Default is ture if ModelsIfNeeded not empty"
+}

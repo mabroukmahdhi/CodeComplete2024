@@ -1,0 +1,47 @@
+﻿@using CodeComplete.Models.Enums
+<div class="ai-prompt-container">
+    @if (Settings != null)
+    {
+        <h3>Complete Settings</h3>
+
+
+        <div class="mb-3">
+            <label for="projectType" class="form-label">Project Type</label>
+            <select id="projectType" class="form-control" @bind="Settings.ProjectType">
+                @foreach (ProjectType type in Enum.GetValues(typeof(ProjectType)))
+                {
+                    <option value="@type">@type</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="projectName" class="form-label">Project Name</label>
+            <input id="projectName" class="form-control" @bind="Settings.ProjectName" />
+        </div>
+
+        @if (Settings.Models != null)
+        {
+            <div class="mb-3">
+                <label for="modelsIfNeeded" class="form-label">Models</label>
+                <ul>
+                    @foreach (var model in Settings.Models)
+                    {
+                        <li> <input type="checkbox" checked="checked"/> @model</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        <div class="form-check">
+            <input id="addStorageBroker" type="checkbox" @bind="Settings.AddStorageBroker" />
+            <label for="addStorageBroker" class="form-check-label">Add Storage Broker ?</label>
+        </div>
+
+        <div class="form-check">
+            <input id="addFoundationService" type="checkbox" @bind="Settings.AddFoundationService" />
+            <label for="addFoundationService" class="form-check-label">Add Foundation Service</label>
+        </div>
+        <button class="confirm-button">Confirm</button>
+    }
+</div>
