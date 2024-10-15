@@ -1,12 +1,13 @@
 ﻿<div class="ai-prompt-container">
     <h3>Logs</h3>
+    <button @onclick="OnClearClicked">Clear</button>
 
     <div class="logs-display">
         @if (Logs != null)
         {
             @foreach (var log in Logs)
             {
-                <div class="log-entry">@log</div>
+                <div class="log-entry">> @log</div>
             }
         }
     </div>

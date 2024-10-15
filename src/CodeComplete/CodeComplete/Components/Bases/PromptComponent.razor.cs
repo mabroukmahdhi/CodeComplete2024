@@ -3,6 +3,7 @@
 // Made with love for DevConf 2024.
 // -----------------------------------
 
+using System;
 using Microsoft.AspNetCore.Components;
 
 namespace CodeComplete.Components.Bases
@@ -15,7 +16,10 @@ namespace CodeComplete.Components.Bases
         [Parameter]
         public EventCallback<string> PromptTextChanged { get; set; }
 
-        private void SendPrompt() =>
-            PromptTextChanged.InvokeAsync(PromptText);
+        [Parameter]
+        public Action<string> CompleteClicked { get; set; }
+
+        private void OnCompleteClicked() =>
+            CompleteClicked?.Invoke(PromptText);
     }
 }

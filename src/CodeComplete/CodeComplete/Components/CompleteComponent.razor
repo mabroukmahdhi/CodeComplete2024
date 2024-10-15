@@ -1,4 +1,4 @@
 ﻿@using CodeComplete.Components.Bases
 
-<PromptComponent @bind-PromptText=promptText />
+<PromptComponent @bind-PromptText=promptText CompleteClicked=@OnCompleteClicked />
 <ConsoleComponent @bind-Logs=logs />

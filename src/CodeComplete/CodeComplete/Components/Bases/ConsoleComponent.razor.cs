@@ -16,12 +16,10 @@ namespace CodeComplete.Components.Bases
         [Parameter]
         public EventCallback<List<string>> LogsChanged { get; set; }
 
-        protected override void OnInitialized()
+        void OnClearClicked()
         {
-            Logs.Add("System initialized.");
-            Logs.Add("User connected.");
-            Logs.Add("Data loaded.");
-            Logs.Add("Error: Unable to connect to the server.");
+            Logs.Clear();
+            LogsChanged.InvokeAsync(Logs);
         }
     }
 }

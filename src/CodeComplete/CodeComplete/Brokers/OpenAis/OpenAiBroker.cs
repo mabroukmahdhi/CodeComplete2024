@@ -31,7 +31,7 @@ namespace CodeComplete.Brokers.OpenAis
             {
                 Request = new ChatCompletionRequest
                 {
-                    Model = "gpt-3.5-turbo",
+                    Model = "chatgpt-4o-latest",
                     Messages =
                     [
                         new() {

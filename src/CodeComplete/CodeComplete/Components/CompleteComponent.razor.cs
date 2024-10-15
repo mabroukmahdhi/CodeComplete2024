@@ -16,5 +16,13 @@ namespace CodeComplete.Components
 
         private string promptText;
         private List<string> logs = [];
+
+        async void OnCompleteClicked(string prompt)
+        {
+            var response = await CompleteService.PostCompletionAsync(prompt);
+            logs.Add(response);
+
+            StateHasChanged();
+        }
     }
 }
