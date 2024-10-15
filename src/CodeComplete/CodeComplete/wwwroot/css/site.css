@@ -31,8 +31,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -47,7 +48,7 @@
     border-radius: 5px;
     margin-bottom: 15px;
     resize: vertical;
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .send-prompt-button {
@@ -62,4 +63,24 @@
 
     .send-prompt-button:hover {
         background-color: #0056b3;
+    }
+
+.logs-display {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.log-entry {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-family: monospace;
+}
+
+    .log-entry:last-child {
+        border-bottom: none;
     }
