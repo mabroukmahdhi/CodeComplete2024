@@ -10,14 +10,18 @@ namespace CodeComplete.Components
 {
     public partial class ConsoleComponent : ComponentBase
     {
-        private List<string> logs = new();
+        [Parameter]
+        public List<string> Logs { get; set; }
+
+        [Parameter]
+        public EventCallback<List<string>> LogsChanged { get; set; }
 
         protected override void OnInitialized()
         {
-            logs.Add("System initialized.");
-            logs.Add("User connected.");
-            logs.Add("Data loaded.");
-            logs.Add("Error: Unable to connect to the server.");
+            Logs.Add("System initialized.");
+            Logs.Add("User connected.");
+            Logs.Add("Data loaded.");
+            Logs.Add("Error: Unable to connect to the server.");
         }
     }
 }
