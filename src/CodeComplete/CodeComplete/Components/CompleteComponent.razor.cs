@@ -11,6 +11,6 @@ namespace CodeComplete.Components
     public partial class CompleteComponent : ComponentBase
     {
         private string promptText;
-        private List<string> logs = new();
+        private List<string> logs = [];
     }
 }
