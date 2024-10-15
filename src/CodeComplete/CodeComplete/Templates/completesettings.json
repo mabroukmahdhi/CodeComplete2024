@@ -2,5 +2,6 @@
   "IsWebAPI": true,
   "IsMauiApp": false,
   "IsBlazorApp": false,
-  "ProjectName": "If not identified in the propmt, please set a project name in this format: DevConf.Demo.MEANINGFUL_WORD_FROM_PROMPMT"
+  "IsMicroservice": false,
+  "ProjectName": "If no name in the requirements, please set a project name in this format: DevConf.Demo.MEANINGFUL_WORD_FROM_PROMPMT"
 }

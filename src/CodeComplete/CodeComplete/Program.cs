@@ -4,6 +4,7 @@
 // -----------------------------------
 
 using System;
+using CodeComplete.Brokers.Files;
 using CodeComplete.Brokers.OpenAis;
 using CodeComplete.Services;
 using Microsoft.AspNetCore.Builder;
@@ -26,6 +27,7 @@ builder.Services.AddSingleton<IOpenAIClient>(client =>
     new OpenAIClient(openAIConfigurations));
 
 builder.Services.AddScoped<IOpenAiBroker, OpenAiBroker>();
+builder.Services.AddScoped<IFileBroker, FileBroker>();
 builder.Services.AddScoped<ICompleteService, CompleteService>();
 
 var app = builder.Build();
