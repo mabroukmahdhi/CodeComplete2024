@@ -3,17 +3,14 @@
 // Made with love for DevConf 2024.
 // -----------------------------------
 
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Components;
 
 namespace CodeComplete.Components
 {
-    public partial class PromptComponent : ComponentBase
+    public partial class CompleteComponent : ComponentBase
     {
         private string promptText;
-
-        private void SendPrompt()
-        {
-
-        }
+        private List<string> logs = new();
     }
 }

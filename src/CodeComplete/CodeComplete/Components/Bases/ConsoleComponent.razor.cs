@@ -6,7 +6,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Components;
 
-namespace CodeComplete.Components
+namespace CodeComplete.Components.Bases
 {
     public partial class ConsoleComponent : ComponentBase
     {
