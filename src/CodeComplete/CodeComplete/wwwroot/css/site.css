@@ -84,3 +84,14 @@
     .log-entry:last-child {
         border-bottom: none;
     }
+
+
+.confirm-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #299c48;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -11,7 +11,7 @@ namespace CodeComplete.Components.Bases
     public partial class PromptComponent : ComponentBase
     {
         [Parameter]
-        public string PromptText { get; set; }
+        public string PromptText { get; set; } = "I want to create a new blazor app with the name 'MyBlazorApp'.";
 
         [Parameter]
         public EventCallback<string> PromptTextChanged { get; set; }
