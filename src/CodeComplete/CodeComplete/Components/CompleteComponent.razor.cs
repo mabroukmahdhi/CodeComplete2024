@@ -13,8 +13,7 @@ namespace CodeComplete.Components
     {
         [Inject]
         protected ICompleteService CompleteService { get; set; }
-
-        private string promptText;
+         
         private List<string> logs = [];
 
         async void OnCompleteClicked(string prompt)
