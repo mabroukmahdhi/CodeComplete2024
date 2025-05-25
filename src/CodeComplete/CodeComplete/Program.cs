@@ -1,7 +1,7 @@
-// -----------------------------------
-// Copyright (c) B&O Service AG.
-// Made with love for DevConf 2024.
-// -----------------------------------
+// ------------------------------------------
+// Copyright (c) 2025 Mabrouk Mahdhi.
+// Made with love for Update Conference 2025.
+// ------------------------------------------
 
 using System;
 using CodeComplete.Brokers.Files;
